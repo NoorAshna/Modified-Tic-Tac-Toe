@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(163, 198, 209);
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto auto 500px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    cursor: pointer;
+    /* user-drag: none; */
+    -webkit-user-drag: none; 
+    
+}
+.cell.empty {
+    background-color: #eee;
+}
+.cell.X {
+    background-color: #ff5733;
+    color: white;
+}
+.cell.O {
+    background-color: #338bff;
+    color: white;
+}
